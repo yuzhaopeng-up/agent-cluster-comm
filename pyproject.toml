@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-cluster-comm"
+version = "1.0.0"
+description = "5-Layer Agent Cluster Communication Architecture"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [{name = "Open Community"}]
+requires-python = ">=3.9"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "cryptography>=41.0.0",
+    "pyyaml>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yuzhaopeng-up/agent-cluster-comm"
+Repository = "https://github.com/yuzhaopeng-up/agent-cluster-comm"
+Issues = "https://github.com/yuzhaopeng-up/agent-cluster-comm/issues"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["skills.*"]
